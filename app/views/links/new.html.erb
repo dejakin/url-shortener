@@ -1,0 +1,11 @@
+Create your shortened URL
+
+<div id="form">
+  <%= form_for :link, url: create_link_path, remote: true do |f| %>
+    URL: <%= f.text_field :original_url, required: true %><br />
+    <%= f.submit "Create" %>
+  <% end %>
+</div>
+<p id="shortened-url">
+
+</p>
